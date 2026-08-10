@@ -51,7 +51,7 @@
 
   /* ── Primsa brand palette ── */
   --color-ink: #000000; /* Pure Black - Primary text / Strong contrast */
-  --color-charcoal-navy: #7A0E17; /* Deep Maroon - Primary Brand Color */
+  --color-charcoal-navy: #4A1B22; /* Softened luxury maroon - Sections / Footer / Header overlays */
   --color-ivory: #FFF8E8; /* Ivory - Soft Background */
   --color-warm-white: #ffffff; /* Pure White - Main background */
   --color-gold: #D4AF37; /* Rich Gold - Accent / Highlights */
@@ -62,7 +62,7 @@
   --color-accent: #000000; /* Pure Black - Footer background / Strong contrast */
 
   /* Extra Brand Colors */
-  --color-maroon-dark: #5C080F;
+  --color-maroon-dark: #3D0C15;
   --color-green-dark: #000000;
   --color-green-light: #333333;
   --color-cream-light: #FFF8E8;
@@ -89,7 +89,7 @@
   --card-foreground: #000000;
   --popover: #ffffff;
   --popover-foreground: #000000;
-  --primary: #7A0E17;
+  --primary: #4A1B22;
   --primary-foreground: #ffffff;
   --secondary: #FFF8E8;
   --secondary-foreground: #000000;
@@ -100,7 +100,7 @@
   --destructive: #941C27;
   --border: #E5DFD4;
   --input: #E5DFD4;
-  --ring: #7A0E17;
+  --ring: #4A1B22;
   --chart-1: oklch(0.87 0 0);
   --chart-2: oklch(0.556 0 0);
   --chart-3: oklch(0.439 0 0);
