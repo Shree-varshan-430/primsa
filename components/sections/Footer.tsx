@@ -90,7 +90,7 @@ export default function Footer() {
   return (
     <footer
       ref={footerRef}
-      className="bg-charcoal-navy border-t border-white/10 overflow-hidden animate-gpu"
+      className="bg-ivory border-t border-line overflow-hidden animate-gpu"
       role="contentinfo"
       aria-label="Site footer"
     >
@@ -99,11 +99,11 @@ export default function Footer() {
           {/* Brand column */}
           <div className="footer-column lg:col-span-1 space-y-4 opacity-0">
             <Logo noBg={true} />
-            <p className="font-sans text-ivory/70 text-sm leading-relaxed">
+            <p className="font-sans text-stone text-sm leading-relaxed">
               Premium, versatile event spaces in the heart of Koramangala,
               Bangalore. For creators, organisations, and everyone in between.
             </p>
-            <p className="font-display italic text-gold-soft text-lg">
+            <p className="font-display italic text-gold text-lg">
               Inspire. Create. Transform.
             </p>
             {/* Social */}
@@ -112,7 +112,7 @@ export default function Footer() {
                 href="https://instagram.com/primsastoriesya"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2.5 rounded-full border border-white/15 text-ivory/60 hover:border-gold/50 hover:text-gold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold"
+                className="p-2.5 rounded-full border border-line text-stone hover:border-gold hover:text-gold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold"
                 aria-label="Primsa Storiesya on Instagram"
               >
                 <InstagramIcon size={16} />
@@ -122,7 +122,7 @@ export default function Footer() {
 
           {/* Spaces links */}
           <div className="footer-column opacity-0">
-            <h3 className="font-display text-xs text-gold-soft uppercase tracking-widest mb-5 font-semibold">
+            <h3 className="font-display text-xs text-primary uppercase tracking-widest mb-5 font-semibold">
               Spaces
             </h3>
             <ul className="space-y-3">
@@ -130,7 +130,7 @@ export default function Footer() {
                 <li key={link.label}>
                   <Link
                     href={link.href}
-                    className="font-sans text-sm text-ivory/70 hover:text-gold-soft transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold rounded"
+                    className="font-sans text-sm text-stone hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold rounded"
                   >
                     {link.label}
                   </Link>
@@ -141,7 +141,7 @@ export default function Footer() {
 
           {/* Company links */}
           <div className="footer-column opacity-0">
-            <h3 className="font-display text-xs text-gold-soft uppercase tracking-widest mb-5 font-semibold">
+            <h3 className="font-display text-xs text-primary uppercase tracking-widest mb-5 font-semibold">
               Company
             </h3>
             <ul className="space-y-3">
@@ -149,7 +149,7 @@ export default function Footer() {
                 <li key={link.label}>
                   <Link
                     href={link.href}
-                    className="font-sans text-sm text-ivory/70 hover:text-gold-soft transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold rounded"
+                    className="font-sans text-sm text-stone hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold rounded"
                   >
                     {link.label}
                   </Link>
@@ -160,13 +160,13 @@ export default function Footer() {
 
           {/* Contact */}
           <div className="footer-column opacity-0">
-            <h3 className="font-display text-xs text-gold-soft uppercase tracking-widest mb-5 font-semibold">
+            <h3 className="font-display text-xs text-primary uppercase tracking-widest mb-5 font-semibold">
               Contact
             </h3>
             <div className="space-y-4">
               <a
                 href="tel:9157373317"
-                className="flex items-center gap-2.5 font-sans text-sm text-ivory/70 hover:text-gold-soft transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold rounded"
+                className="flex items-center gap-2.5 font-sans text-sm text-stone hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold rounded"
                 aria-label="Call us at 9157373317"
               >
                 <Phone size={14} className="text-gold flex-shrink-0" aria-hidden="true" />
@@ -174,7 +174,7 @@ export default function Footer() {
               </a>
               <a
                 href="mailto:primsastoriesya@gmail.com"
-                className="flex items-center gap-2.5 font-sans text-sm text-ivory/70 hover:text-gold-soft transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold rounded break-all"
+                className="flex items-center gap-2.5 font-sans text-sm text-stone hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold rounded break-all"
                 aria-label="Email us at primsastoriesya@gmail.com"
               >
                 <Mail size={14} className="text-gold flex-shrink-0" aria-hidden="true" />
@@ -182,7 +182,7 @@ export default function Footer() {
               </a>
               <div className="flex items-start gap-2.5">
                 <MapPin size={14} className="text-gold mt-1 flex-shrink-0" aria-hidden="true" />
-                <address className="font-sans text-sm text-ivory/70 not-italic leading-relaxed">
+                <address className="font-sans text-sm text-stone not-italic leading-relaxed">
                   Koramangala,<br />
                   Bangalore – 560034,<br />
                   Karnataka, India
@@ -193,23 +193,23 @@ export default function Footer() {
         </div>
 
         {/* Divider */}
-        <div className="h-px bg-white/10 mb-6" aria-hidden="true" />
+        <div className="h-px bg-line mb-6" aria-hidden="true" />
 
         {/* Bottom bar */}
         <div className="footer-bottom opacity-0 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="font-sans text-xs text-ivory/50">
+          <p className="font-sans text-xs text-stone/60">
             &copy; 2026 Primsa Storiesya. All rights reserved.
           </p>
           <div className="flex gap-4">
             <Link
               href="#"
-              className="font-sans text-xs text-ivory/50 hover:text-ivory/80 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold rounded"
+              className="font-sans text-xs text-stone/60 hover:text-ink transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold rounded"
             >
               Privacy Policy
             </Link>
             <Link
               href="#"
-              className="font-sans text-xs text-ivory/50 hover:text-ivory/80 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold rounded"
+              className="font-sans text-xs text-stone/60 hover:text-ink transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold rounded"
             >
               Terms of Use
             </Link>
