@@ -80,7 +80,7 @@ export default function StatementSection() {
           <p
             className="font-accent text-2xl text-center md:text-4xl text-stone italic leading-relaxed max-w-3xl mx-auto"
           >
-            A space that adapts. An experience that lasts.
+            &ldquo;Every celebration deserves a space that feels unforgettable.&rdquo;
           </p>
           <span
             className="font-display text-7xl md:text-9xl text-gold/20 absolute -bottom-12 -right-2 md:-right-8 leading-none select-none"

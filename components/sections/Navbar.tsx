@@ -107,9 +107,9 @@ export default function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`relative font-display text-sm font-medium transition-colors hover:text-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold rounded px-1 py-1.5 group ${
+                  className={`relative font-display text-sm font-medium transition-colors hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded px-1 py-1.5 group ${
                     active
-                      ? "text-gold font-semibold"
+                      ? "text-primary font-semibold"
                       : scrolled || pathname !== "/"
                       ? "text-stone"
                       : "text-white/80"
@@ -117,7 +117,7 @@ export default function Navbar() {
                 >
                   {link.label}
                   <span
-                    className={`absolute bottom-0 left-0 w-full h-[1.5px] bg-gold origin-left transition-transform duration-300 scale-x-0 group-hover:scale-x-100 ${
+                    className={`absolute bottom-0 left-0 w-full h-[1.5px] bg-primary origin-left transition-transform duration-300 scale-x-0 group-hover:scale-x-100 ${
                       active ? "scale-x-100" : ""
                     }`}
                   />
@@ -130,7 +130,7 @@ export default function Navbar() {
           <div className="hidden lg:flex items-center gap-5">
             <a
               href="tel:9157373317"
-              className={`flex items-center gap-2 font-display text-sm font-medium transition-colors hover:text-gold ${
+              className={`flex items-center gap-2 font-display text-sm font-medium transition-colors hover:text-primary ${
                 scrolled || pathname !== "/" ? "text-stone" : "text-white/80"
               }`}
               aria-label="Call Primsa Storiesya"
@@ -148,7 +148,7 @@ export default function Navbar() {
                 href="/contact"
                 className="bg-primary text-white font-display text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-primary-dark hover:shadow-lg transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 inline-block"
               >
-                Book Your Space
+                Book Your Event
               </Link>
             </div>
           </div>
@@ -156,7 +156,7 @@ export default function Navbar() {
           {/* Mobile hamburger */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className={`lg:hidden p-2 rounded-full transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold ${
+            className={`lg:hidden p-2 rounded-full transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary ${
               scrolled || pathname !== "/" ? "text-ink hover:bg-line" : "text-white hover:bg-white/10"
             }`}
             aria-label={menuOpen ? "Close menu" : "Open menu"}
@@ -215,7 +215,7 @@ export default function Navbar() {
                 onClick={() => setMenuOpen(false)}
                 className="bg-primary text-white font-display text-sm font-semibold px-6 py-3 rounded-full self-start hover:bg-primary-dark transition-colors"
               >
-                Book Your Space
+                Book Your Event
               </Link>
             </div>
           </motion.div>

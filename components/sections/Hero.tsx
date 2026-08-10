@@ -14,14 +14,10 @@ const heroContent = [
     eyebrow: "PREMIUM EVENT SPACES · KORAMANGALA, BANGALORE",
     h1Words: [
       { text: "Premium", type: "normal" },
-      { text: "Event", type: "normal" },
       { text: "Spaces.", type: "italic" },
       { text: "break", type: "break" },
-      { text: "Built", type: "normal" },
-      { text: "for", type: "normal" },
-      { text: "Creators", type: "normal" },
-      { text: "&", type: "normal" },
-      { text: "Teams.", type: "italic" },
+      { text: "Unforgettable", type: "normal" },
+      { text: "Experiences.", type: "italic" },
     ],
     subhead: "A luxury multi-purpose sanctuary offering bespoke event halls, recording studios, and collaborative spaces in Bangalore.",
   },
@@ -241,7 +237,7 @@ export default function Hero() {
             {/* Subhead */}
             <motion.p
               variants={fadeUpVariants}
-              className="font-sans text-white/90 text-base md:text-lg max-w-2xl leading-relaxed mb-10 text-center"
+              className="font-sans text-ivory text-base md:text-lg max-w-2xl leading-relaxed mb-10 text-center"
               style={{ textShadow: "0 2px 14px rgba(0,0,0,0.5)" }}
             >
               {heroContent[current].subhead}
@@ -264,7 +260,7 @@ export default function Hero() {
           >
             <button
               onClick={() => scrollTo("#contact")}
-              className="bg-gold text-warm-white font-sans font-semibold text-sm md:text-base px-7 py-3.5 rounded-full hover:bg-gold/90 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-transparent shadow-[0_0_0_rgba(183,144,47,0)] hover:shadow-[0_0_20px_rgba(183,144,47,0.45)]"
+              className="bg-primary text-white font-display font-semibold text-sm md:text-base px-7 py-3.5 rounded-full hover:bg-primary-dark transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-transparent shadow-[0_4px_20px_rgba(122,14,23,0.15)]"
               aria-label="Book your event space at Primsa Storiesya"
             >
               Book Your Space Today
@@ -278,7 +274,7 @@ export default function Hero() {
           >
             <button
               onClick={() => scrollTo("#spaces")}
-              className="border border-white/50 text-white font-sans font-medium text-sm md:text-base px-7 py-3.5 rounded-full hover:bg-white/10 hover:border-white transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-transparent"
+              className="border border-ivory text-white font-display font-semibold text-sm md:text-base px-7 py-3.5 rounded-full hover:bg-white/10 hover:border-white transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-transparent"
               aria-label="Explore our event spaces"
             >
               Explore Our Spaces
