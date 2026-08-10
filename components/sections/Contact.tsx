@@ -85,7 +85,7 @@ export default function Contact() {
           <p className="eyebrow text-gold-soft mb-4 text-center">GET IN TOUCH</p>
           <h2
             id="contact-heading"
-            className="font-display text-display-lg text-ivory text-center"
+            className="font-display text-display-lg text-white text-center"
             style={{ fontVariationSettings: "'opsz' 56, 'SOFT' 20" }}
           >
             Let&apos;s plan your{" "}
@@ -333,7 +333,7 @@ export default function Contact() {
                 <button
                   type="submit"
                   disabled={submitting}
-                  className="w-full bg-gold text-warm-white font-display font-semibold text-sm py-4 rounded-xl hover:bg-gold/90 disabled:opacity-60 disabled:cursor-not-allowed transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-charcoal-navy mt-2"
+                  className="w-full bg-white text-charcoal-navy font-display font-semibold text-sm py-4 rounded-xl hover:bg-ivory disabled:opacity-60 disabled:cursor-not-allowed transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-charcoal-navy mt-2"
                   aria-label="Submit booking enquiry"
                 >
                   {submitting ? "Sending..." : "Send Enquiry →"}

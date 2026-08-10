@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Phone, Menu, X, Diamond } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Logo from "../Logo";
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -77,26 +78,10 @@ export default function Navbar() {
           {/* Wordmark */}
           <Link
             href="/"
-            className="flex items-center gap-1.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold rounded group"
-            aria-label="Primsa Storiesya  —   Home"
+            className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold rounded group"
+            aria-label="Primsa Storiesya — Home"
           >
-            <span
-              className="font-display text-gold text-lg md:text-xl font-semibold tracking-tight transition-transform duration-300 group-hover:scale-105"
-            >
-              PRIMSA
-            </span>
-            <Diamond
-              size={8}
-              className="fill-gold text-gold opacity-80 transition-transform duration-500 group-hover:rotate-45"
-              aria-hidden="true"
-            />
-            <span
-              className={`font-display text-lg md:text-xl font-semibold tracking-tight transition-colors transition-transform duration-300 group-hover:scale-105 ${
-                scrolled || pathname !== "/" ? "text-ink" : "text-white"
-              }`}
-            >
-              Storiesya
-            </span>
+            <Logo scrolled={scrolled || pathname !== "/"} />
           </Link>
 
           {/* Desktop Nav */}
@@ -146,7 +131,7 @@ export default function Navbar() {
             >
               <Link
                 href="/contact"
-                className="bg-gold text-warm-white font-display text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-gold/90 hover:shadow-lg transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 inline-block"
+                className="bg-primary text-white font-display text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-primary-dark hover:shadow-lg transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 inline-block"
               >
                 Book Your Event
               </Link>
@@ -213,7 +198,7 @@ export default function Navbar() {
               <Link
                 href="/contact"
                 onClick={() => setMenuOpen(false)}
-                className="bg-gold text-warm-white font-display text-sm font-semibold px-6 py-3 rounded-full self-start hover:bg-gold/90 transition-colors"
+                className="bg-primary text-white font-display text-sm font-semibold px-6 py-3 rounded-full self-start hover:bg-primary-dark transition-colors"
               >
                 Book Your Event
               </Link>

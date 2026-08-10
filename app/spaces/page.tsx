@@ -138,7 +138,7 @@ export default function SpacesPage() {
                   <div className="pt-4">
                     <Link
                       href="/contact"
-                      className="inline-flex items-center gap-2 bg-charcoal-navy text-warm-white font-display text-sm font-semibold px-6 py-3 rounded-full hover:bg-gold hover:text-warm-white transition-all duration-300"
+                      className="inline-flex items-center gap-2 bg-primary text-white font-display text-sm font-semibold px-6 py-3 rounded-full hover:bg-primary-dark hover:text-white transition-all duration-300"
                     >
                       Enquire For {space.name}
                       <ArrowRight size={14} />

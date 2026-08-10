@@ -194,10 +194,10 @@ export default function Gallery() {
                 setFilter(cat);
                 setTimeout(() => ScrollTrigger.refresh(), 100);
               }}
-              className={`font-display text-xs md:text-sm font-semibold px-5 py-2.5 rounded-full border transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold ${
+              className={`font-display text-xs md:text-sm font-semibold px-5 py-2.5 rounded-full border transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary ${
                 filter === cat
-                  ? "bg-gold text-white border-gold shadow-md"
-                  : "border-line text-stone hover:border-gold/50 hover:text-gold bg-transparent"
+                  ? "bg-primary text-white border-primary shadow-md"
+                  : "border-line text-stone hover:border-primary/50 hover:text-primary bg-transparent"
               }`}
             >
               {cat}

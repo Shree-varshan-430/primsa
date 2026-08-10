@@ -101,7 +101,7 @@ export default function AboutPage() {
               <div className="pt-4">
                 <Link
                   href="/contact"
-                  className="inline-flex items-center gap-2 bg-gold text-warm-white font-display text-sm font-semibold px-6 py-3 rounded-full hover:bg-gold/90 transition-colors"
+                  className="inline-flex items-center gap-2 bg-primary text-white font-display text-sm font-semibold px-6 py-3 rounded-full hover:bg-primary-dark transition-colors"
                 >
                   Plan Your Visit
                   <ArrowRight size={14} />

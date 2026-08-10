@@ -122,8 +122,8 @@ export default function GalleryPage() {
             onClick={() => setFilter(cat)}
             className={`font-display text-xs md:text-sm font-semibold px-5 py-2.5 rounded-full border transition-all duration-300 ${
               filter === cat
-                ? "bg-gold text-white border-gold shadow-md"
-                : "border-line text-stone hover:border-gold/50 hover:text-gold"
+                ? "bg-primary text-white border-primary shadow-md"
+                : "border-line text-stone hover:border-primary/50 hover:text-primary"
             }`}
           >
             {cat}

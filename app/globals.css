@@ -50,24 +50,24 @@
   --radius-4xl: calc(var(--radius) * 2.6);
 
   /* ── Primsa brand palette ── */
-  --color-ink: #231816; /* Deep Espresso Wenge - Primary text */
-  --color-charcoal-navy: #4A1B22; /* Softened luxury maroon - Sections / Footer / Header overlays */
-  --color-ivory: #FAF6EF; /* Warm cream - Page background section accent */
+  --color-ink: #0D0D0D; /* Black - primary text */
+  --color-charcoal-navy: #7A0E17; /* Primary Maroon - Sections / Header overlays */
+  --color-ivory: #F0E8D5; /* Cream - Page background section accent */
   --color-warm-white: #ffffff; /* Pure White - Page background */
   --color-gold: #D4AF37; /* Metallic Gold accent */
-  --color-gold-soft: #E5C573; /* Warm soft gold highlight */
-  --color-terracotta: #A82E2E; /* Red family for alert highlights */
-  --color-stone: #4D3D3A; /* Warm Cocoa Taupe - Regular body text */
-  --color-line: #E5DFD4; /* Soft cream-line border divider */
-  --color-accent: #0A5C36; /* 10% Emerald Green accent color */
+  --color-gold-soft: #E5C866; /* Warm soft gold highlight */
+  --color-terracotta: #941C27; /* Red family for alert highlights */
+  --color-stone: #454545; /* Dark Gray - Regular body text */
+  --color-line: #E5DED0; /* Border divider */
+  --color-accent: #0F3D2E; /* Dark Green - secondary brand color */
 
   /* Extra Brand Colors */
-  --color-maroon-dark: #3D0C15;
-  --color-green-dark: #052617;
-  --color-green-light: #0D4E31;
-  --color-cream-light: #FAF6EF;
-  --color-cream-dark: #E6DFD2;
-  --color-gold-dark: #B7902F;
+  --color-maroon-dark: #5C080F;
+  --color-green-dark: #082C20;
+  --color-green-light: #1B5442;
+  --color-cream-light: #F8F4EA;
+  --color-cream-dark: #E5DAC0;
+  --color-gold-dark: #B8941F;
   --color-muted-gray: #777777;
 
   /* ── Font families ── */
@@ -84,23 +84,23 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #231816;
+  --foreground: #0D0D0D;
   --card: #ffffff;
-  --card-foreground: #231816;
+  --card-foreground: #0D0D0D;
   --popover: #ffffff;
-  --popover-foreground: #231816;
-  --primary: #D4AF37;
+  --popover-foreground: #0D0D0D;
+  --primary: #7A0E17;
   --primary-foreground: #ffffff;
-  --secondary: #FAF6EF;
-  --secondary-foreground: #231816;
-  --muted: #FAF6EF;
-  --muted-foreground: #4D3D3A;
-  --accent: #0A5C36;
+  --secondary: #F0E8D5;
+  --secondary-foreground: #0D0D0D;
+  --muted: #F0E8D5;
+  --muted-foreground: #454545;
+  --accent: #0F3D2E;
   --accent-foreground: #ffffff;
-  --destructive: #A82E2E;
-  --border: #E5DFD4;
-  --input: #E5DFD4;
-  --ring: #D4AF37;
+  --destructive: #941C27;
+  --border: #E5DED0;
+  --input: #E5DED0;
+  --ring: #7A0E17;
   --chart-1: oklch(0.87 0 0);
   --chart-2: oklch(0.556 0 0);
   --chart-3: oklch(0.439 0 0);

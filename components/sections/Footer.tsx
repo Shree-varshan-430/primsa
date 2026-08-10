@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import { Diamond, Phone, Mail, MapPin } from "lucide-react";
 import Link from "next/link";
 import { gsap } from "gsap";
+import Logo from "../Logo";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const InstagramIcon = ({ size = 16 }: { size?: number }) => (
@@ -89,7 +90,7 @@ export default function Footer() {
   return (
     <footer
       ref={footerRef}
-      className="bg-charcoal-navy border-t border-white/10 overflow-hidden animate-gpu"
+      className="bg-accent border-t border-white/10 overflow-hidden animate-gpu"
       role="contentinfo"
       aria-label="Site footer"
     >
@@ -97,21 +98,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-12 mb-12">
           {/* Brand column */}
           <div className="footer-column lg:col-span-1 space-y-4 opacity-0">
-            <div className="flex items-center gap-1.5">
-              <span
-                className="font-display text-gold text-lg font-semibold"
-                style={{ fontVariationSettings: "'opsz' 36, 'SOFT' 50" }}
-              >
-                PRIMSA
-              </span>
-              <Diamond size={7} className="fill-gold text-gold opacity-60" aria-hidden="true" />
-              <span
-                className="font-display text-ivory text-lg font-semibold"
-                style={{ fontVariationSettings: "'opsz' 36, 'SOFT' 50" }}
-              >
-                Storiesya
-              </span>
-            </div>
+            <Logo scrolled={false} isLight={false} />
             <p className="font-sans text-ivory/70 text-sm leading-relaxed">
               Premium, versatile event spaces in the heart of Koramangala,
               Bangalore. For creators, organisations, and everyone in between.

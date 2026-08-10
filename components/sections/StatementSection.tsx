@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function StatementSection() {
   return (
     <section
-      className="bg-charcoal-navy py-20 md:py-32 relative overflow-hidden"
+      className="bg-ivory py-20 md:py-32 relative overflow-hidden"
       aria-labelledby="statement-heading"
     >
       {/* Subtle background image overlay */}
@@ -26,7 +26,7 @@ export default function StatementSection() {
 
       <div className="relative z-10 max-w-5xl mx-auto px-5 md:px-8 text-center">
         <motion.p
-          className="eyebrow text-gold-soft mb-6 text-center"
+          className="eyebrow text-gold mb-6 text-center"
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -37,7 +37,7 @@ export default function StatementSection() {
 
         <motion.h2
           id="statement-heading"
-          className="font-display text-display-xl text-ivory mb-10 text-center"
+          className="font-display text-display-xl text-charcoal-navy mb-10 text-center"
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -78,7 +78,7 @@ export default function StatementSection() {
             &ldquo;
           </span>
           <p
-            className="font-accent text-2xl text-center md:text-4xl text-ivory/90 italic leading-relaxed max-w-3xl mx-auto"
+            className="font-accent text-2xl text-center md:text-4xl text-stone italic leading-relaxed max-w-3xl mx-auto"
           >
             &ldquo;Every celebration deserves a space that feels unforgettable.&rdquo;
           </p>
@@ -91,7 +91,7 @@ export default function StatementSection() {
         </motion.blockquote>
 
         <motion.p
-          className="font-sans text-gold-soft/80 text-sm mt-10 text-center tracking-widest uppercase"
+          className="font-sans text-stone text-sm mt-10 text-center tracking-widest uppercase"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
