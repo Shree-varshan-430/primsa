@@ -98,7 +98,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-12 mb-12">
           {/* Brand column */}
           <div className="footer-column lg:col-span-1 space-y-4 opacity-0">
-            <Logo scrolled={false} isLight={false} />
+            <Logo noBg={true} />
             <p className="font-sans text-ivory/70 text-sm leading-relaxed">
               Premium, versatile event spaces in the heart of Koramangala,
               Bangalore. For creators, organisations, and everyone in between.
