@@ -90,7 +90,7 @@ export default function Footer() {
   return (
     <footer
       ref={footerRef}
-      className="bg-accent border-t border-white/10 overflow-hidden animate-gpu"
+      className="bg-charcoal-navy border-t border-white/10 overflow-hidden animate-gpu"
       role="contentinfo"
       aria-label="Site footer"
     >

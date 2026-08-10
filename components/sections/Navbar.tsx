@@ -131,7 +131,7 @@ export default function Navbar() {
             >
               <Link
                 href="/contact"
-                className="bg-primary text-white font-display text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-primary-dark hover:shadow-lg transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 inline-block"
+                className="bg-gold text-warm-white font-display text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-gold/90 hover:shadow-lg transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 inline-block"
               >
                 Book Your Event
               </Link>
@@ -198,7 +198,7 @@ export default function Navbar() {
               <Link
                 href="/contact"
                 onClick={() => setMenuOpen(false)}
-                className="bg-primary text-white font-display text-sm font-semibold px-6 py-3 rounded-full self-start hover:bg-primary-dark transition-colors"
+                className="bg-gold text-warm-white font-display text-sm font-semibold px-6 py-3 rounded-full self-start hover:bg-gold/90 transition-colors"
               >
                 Book Your Event
               </Link>

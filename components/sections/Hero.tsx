@@ -260,7 +260,7 @@ export default function Hero() {
           >
             <button
               onClick={() => scrollTo("#contact")}
-              className="bg-primary text-white font-display font-semibold text-sm md:text-base px-7 py-3.5 rounded-full hover:bg-primary-dark transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-transparent shadow-[0_4px_20px_rgba(122,14,23,0.15)]"
+              className="bg-gold text-warm-white font-display font-semibold text-sm md:text-base px-7 py-3.5 rounded-full hover:bg-gold/90 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-transparent shadow-[0_4px_20px_rgba(183,144,47,0.15)]"
               aria-label="Book your event space at Primsa Storiesya"
             >
               Book Your Space Today

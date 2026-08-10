@@ -95,12 +95,12 @@ export default function Testimonials() {
 
   return (
     <section
-      className="bg-[#F8F4EA] py-20 md:py-28 overflow-hidden border-t border-border"
+      className="bg-charcoal-navy py-20 md:py-28 overflow-hidden border-t border-white/5"
       aria-label="Client trust and testimonials"
     >
       <div className="max-w-7xl mx-auto px-5 md:px-8 mb-12 text-center">
         <motion.p
-          className="eyebrow text-gold mb-3"
+          className="eyebrow text-gold-soft mb-3"
           initial={{ opacity: 0, y: 12 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -109,7 +109,7 @@ export default function Testimonials() {
           TRUSTED BY
         </motion.p>
         <motion.h2
-          className="font-display text-display-md text-charcoal-navy"
+          className="font-display text-display-md text-ivory"
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -129,7 +129,7 @@ export default function Testimonials() {
           {duplicatedBadges.map((badge, i) => (
             <span
               key={`${badge}-${i}`}
-              className="flex-shrink-0 font-sans text-sm text-stone border border-border rounded-full px-5 py-2.5 mx-2 whitespace-nowrap"
+              className="flex-shrink-0 font-sans text-sm text-gold-soft/80 border border-gold/15 rounded-full px-5 py-2.5 mx-2 whitespace-nowrap"
               aria-hidden={i >= clientBadges.length}
             >
               {badge}
@@ -144,14 +144,14 @@ export default function Testimonials() {
         {/* Navigation arrows (desktop only) */}
         <button
           onClick={handlePrev}
-          className="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 p-3 rounded-full border border-charcoal-navy/20 text-charcoal-navy/60 hover:text-primary hover:border-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold z-10"
+          className="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 p-3 rounded-full border border-white/10 text-ivory/60 hover:text-gold hover:border-gold/40 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold z-10"
           aria-label="Previous testimonial"
         >
           <ChevronLeft size={20} />
         </button>
         <button
           onClick={handleNext}
-          className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 p-3 rounded-full border border-charcoal-navy/20 text-charcoal-navy/60 hover:text-primary hover:border-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold z-10"
+          className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 p-3 rounded-full border border-white/10 text-ivory/60 hover:text-gold hover:border-gold/40 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold z-10"
           aria-label="Next testimonial"
         >
           <ChevronRight size={20} />
@@ -179,11 +179,11 @@ export default function Testimonials() {
                   {testimonials[current].initials}
                 </div>
                 <div className="text-left">
-                  <p className="font-display font-semibold text-ink text-lg leading-tight mb-0 text-left">
+                  <p className="font-display font-semibold text-ivory text-lg leading-tight mb-0 text-left">
                     {testimonials[current].name}
                   </p>
                   <p className="font-sans text-xs text-stone mt-0 mb-0 text-left">
-                    {testimonials[current].role}  ·  <span className="text-gold font-medium">{testimonials[current].organisation}</span>
+                    {testimonials[current].role}  ·  <span className="text-gold-soft/80 font-medium">{testimonials[current].organisation}</span>
                   </p>
                 </div>
               </div>
@@ -203,7 +203,7 @@ export default function Testimonials() {
                 >
                   &ldquo;
                 </span>
-                <p className="font-accent italic text-xl md:text-2xl text-stone leading-relaxed mb-0">
+                <p className="font-accent italic text-xl md:text-2xl text-ivory/90 leading-relaxed mb-0">
                   {testimonials[current].quote}
                 </p>
                 <span
