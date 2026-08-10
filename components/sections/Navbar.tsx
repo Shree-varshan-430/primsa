@@ -65,11 +65,7 @@ export default function Navbar() {
   return (
     <>
       <motion.header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          scrolled || pathname !== "/"
-            ? "bg-ivory/80 backdrop-blur-md shadow-sm border-b border-line/20"
-            : "bg-transparent"
-        }`}
+        className="fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-white/95 backdrop-blur-md shadow-sm border-b border-line/20"
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
@@ -81,7 +77,7 @@ export default function Navbar() {
             className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold rounded group"
             aria-label="Primsa Storiesya — Home"
           >
-            <Logo scrolled={scrolled || pathname !== "/"} />
+            <Logo noBg={true} />
           </Link>
 
           {/* Desktop Nav */}
@@ -95,9 +91,7 @@ export default function Navbar() {
                   className={`relative font-display text-sm font-medium transition-colors hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded px-1 py-1.5 group ${
                     active
                       ? "text-primary font-semibold"
-                      : scrolled || pathname !== "/"
-                      ? "text-stone"
-                      : "text-white/80"
+                      : "text-stone"
                   }`}
                 >
                   {link.label}
@@ -115,9 +109,7 @@ export default function Navbar() {
           <div className="hidden lg:flex items-center gap-5">
             <a
               href="tel:9157373317"
-              className={`flex items-center gap-2 font-display text-sm font-medium transition-colors hover:text-primary ${
-                scrolled || pathname !== "/" ? "text-stone" : "text-white/80"
-              }`}
+              className="flex items-center gap-2 font-display text-sm font-medium transition-colors hover:text-primary text-stone"
               aria-label="Call Primsa Storiesya"
             >
               <Phone size={14} aria-hidden="true" />
@@ -141,9 +133,7 @@ export default function Navbar() {
           {/* Mobile hamburger */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className={`lg:hidden p-2 rounded-full transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary ${
-              scrolled || pathname !== "/" ? "text-ink hover:bg-line" : "text-white hover:bg-white/10"
-            }`}
+            className="lg:hidden p-2 rounded-full transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary text-ink hover:bg-line"
             aria-label={menuOpen ? "Close menu" : "Open menu"}
             aria-expanded={menuOpen}
             aria-controls="mobile-menu"
