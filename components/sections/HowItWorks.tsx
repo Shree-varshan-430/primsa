@@ -53,7 +53,7 @@ export default function HowItWorks() {
           <p className="eyebrow mb-4 text-center">HOW WE WORK</p>
           <h2
             id="how-it-works-heading"
-            className="font-display text-display-lg text-ink"
+            className="font-display text-display-lg text-primary"
           >
             Four steps to your{" "}
             <em>next</em> event.

@@ -177,7 +177,7 @@ export default function Amenities() {
             <GoldOrnament />
             <h2
               id="amenities-heading"
-              className="font-display text-display-lg text-ink mb-4"
+              className="font-display text-display-lg text-primary mb-4"
             >
               Premium <em>Amenities</em>
             </h2>

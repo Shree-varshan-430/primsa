@@ -144,7 +144,7 @@ export default function AboutUs() {
               <h2
                 ref={headingRef}
                 id="about-heading"
-                className="font-display text-display-lg text-ink"
+                className="font-display text-display-lg text-primary"
               >
                 A space designed{" "}
                 <em>first</em>. A studio built

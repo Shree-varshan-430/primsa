@@ -22,7 +22,7 @@ export default function ContactPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1, duration: 0.7 }}
-          className="font-display text-display-xl text-ink max-w-4xl mx-auto mb-6"
+          className="font-display text-display-xl text-primary max-w-4xl mx-auto mb-6"
         >
           Let&apos;s plan your <em>next</em> event.
         </motion.h1>
@@ -50,7 +50,7 @@ export default function ContactPage() {
               <div className="flex justify-center md:justify-start">
                 <MapPin className="text-gold" size={24} />
               </div>
-              <h3 className="font-display text-xl text-ink font-semibold">Location</h3>
+              <h3 className="font-display text-xl text-primary font-semibold">Location</h3>
               <p className="font-sans text-stone text-sm leading-relaxed">
                 Koramangala, Bangalore – 560034,<br />
                 Karnataka, India. Located in the prime creative district.
@@ -62,7 +62,7 @@ export default function ContactPage() {
               <div className="flex justify-center md:justify-start">
                 <Clock className="text-gold" size={24} />
               </div>
-              <h3 className="font-display text-xl text-ink font-semibold">Hours</h3>
+              <h3 className="font-display text-xl text-primary font-semibold">Hours</h3>
               <p className="font-sans text-stone text-sm leading-relaxed">
                 Monday – Sunday: 8:00 AM – 10:00 PM<br />
                 Available for early setups & late night wraps on request.
@@ -74,7 +74,7 @@ export default function ContactPage() {
               <div className="flex justify-center md:justify-start">
                 <Mail className="text-gold" size={24} />
               </div>
-              <h3 className="font-display text-xl text-ink font-semibold">Direct</h3>
+              <h3 className="font-display text-xl text-primary font-semibold">Direct</h3>
               <p className="font-sans text-stone text-sm leading-relaxed">
                 Phone: <a href="tel:9157373317" className="hover:text-gold transition-colors">+91 91573 73317</a><br />
                 Email: <a href="mailto:primsastoriesya@gmail.com" className="hover:text-gold transition-colors break-all">primsastoriesya@gmail.com</a>

@@ -52,7 +52,7 @@ export default function SpacesPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1, duration: 0.7 }}
-          className="font-display text-display-xl text-ink max-w-4xl mx-auto mb-6"
+          className="font-display text-display-xl text-primary max-w-4xl mx-auto mb-6"
         >
           Versatile spaces built to <em>inspire</em>.
         </motion.h1>
@@ -74,7 +74,7 @@ export default function SpacesPage() {
       <section className="py-20 md:py-28 bg-warm-white border-t border-line">
         <div className="max-w-7xl mx-auto px-5 md:px-8 lg:px-12">
           <div className="text-center mb-16">
-            <h2 className="font-display text-display-md text-ink">
+            <h2 className="font-display text-display-md text-primary">
               Detailed Space <em>Specifications</em>
             </h2>
             <p className="font-sans text-stone text-sm md:text-base mt-3 max-w-xl mx-auto">
@@ -109,7 +109,7 @@ export default function SpacesPage() {
 
                 {/* Details side */}
                 <div className="lg:col-span-6 space-y-6">
-                  <h3 className="font-display text-3xl md:text-4xl text-ink font-semibold">
+                  <h3 className="font-display text-3xl md:text-4xl text-primary font-semibold">
                     {space.name}
                   </h3>
                   <div className="flex flex-wrap gap-4 text-xs font-sans text-gold border-y border-line py-3">

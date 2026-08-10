@@ -40,7 +40,7 @@ export default function AboutPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1, duration: 0.7 }}
-          className="font-display text-display-xl text-ink max-w-4xl mx-auto mb-6"
+          className="font-display text-display-xl text-primary max-w-4xl mx-auto mb-6"
         >
           A space that <em>adapts</em>. An experience that <em>lasts</em>.
         </motion.h1>
@@ -88,7 +88,7 @@ export default function AboutPage() {
               transition={{ delay: 0.2, duration: 0.7 }}
               className="lg:col-span-6 space-y-6"
             >
-              <h2 className="font-display text-3xl md:text-4xl text-ink font-semibold">
+              <h2 className="font-display text-3xl md:text-4xl text-primary font-semibold">
                 Designed for those who <em>create</em>, <em>teach</em>, and <em>transform</em>.
               </h2>
               <p className="font-sans text-stone text-sm md:text-base leading-relaxed">
