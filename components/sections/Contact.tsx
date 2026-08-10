@@ -173,7 +173,7 @@ export default function Contact() {
               href="https://wa.me/919157373317"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 bg-[#25D366] text-white font-sans font-semibold text-sm px-6 py-3.5 rounded-full hover:bg-[#1ebe5a] transition-colors w-fit focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366]"
+              className="flex items-center gap-3 bg-[#25D366] text-white font-display font-semibold text-sm px-6 py-3.5 rounded-full hover:bg-[#1ebe5a] transition-colors w-fit focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366]"
               aria-label="Chat with Primsa Storiesya on WhatsApp"
             >
               <MessageCircle size={18} aria-hidden="true" />
@@ -221,7 +221,7 @@ export default function Contact() {
                     aria-describedby={errors.name ? "name-error" : undefined}
                   />
                   {errors.name && (
-                    <p id="name-error" className="text-terracotta text-xs mt-1.5" role="alert">
+                    <p id="name-error" className="font-sans text-terracotta text-xs mt-1.5" role="alert">
                       {errors.name.message}
                     </p>
                   )}
@@ -242,7 +242,7 @@ export default function Contact() {
                       aria-describedby={errors.phone ? "phone-error" : undefined}
                     />
                     {errors.phone && (
-                      <p id="phone-error" className="text-terracotta text-xs mt-1.5" role="alert">
+                      <p id="phone-error" className="font-sans text-terracotta text-xs mt-1.5" role="alert">
                         {errors.phone.message}
                       </p>
                     )}
@@ -261,7 +261,7 @@ export default function Contact() {
                       aria-describedby={errors.email ? "email-error" : undefined}
                     />
                     {errors.email && (
-                      <p id="email-error" className="text-terracotta text-xs mt-1.5" role="alert">
+                      <p id="email-error" className="font-sans text-terracotta text-xs mt-1.5" role="alert">
                         {errors.email.message}
                       </p>
                     )}
@@ -290,7 +290,7 @@ export default function Contact() {
                       ))}
                     </select>
                     {errors.eventType && (
-                      <p id="event-type-error" className="text-terracotta text-xs mt-1.5" role="alert">
+                      <p id="event-type-error" className="font-sans text-terracotta text-xs mt-1.5" role="alert">
                         {errors.eventType.message}
                       </p>
                     )}
@@ -309,7 +309,7 @@ export default function Contact() {
                       aria-describedby={errors.preferredDate ? "date-error" : undefined}
                     />
                     {errors.preferredDate && (
-                      <p id="date-error" className="text-terracotta text-xs mt-1.5" role="alert">
+                      <p id="date-error" className="font-sans text-terracotta text-xs mt-1.5" role="alert">
                         {errors.preferredDate.message}
                       </p>
                     )}
