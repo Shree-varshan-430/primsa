@@ -284,7 +284,7 @@ export default function Offerings() {
             <GoldOrnament />
             <h2
               id="spaces-heading"
-              className="font-display text-display-lg text-primary mb-4"
+              className="font-display text-display-lg text-ink mb-4 [&>em]:text-gold [&>em]:not-italic"
             >
               Our <em>Event</em> Spaces
             </h2>

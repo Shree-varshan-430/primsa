@@ -227,7 +227,7 @@ export default function Hero() {
                       variants={wordRevealVariants}
                       className="inline-block origin-bottom"
                     >
-                      {word.type === "italic" ? <em>{word.text}</em> : word.text}
+                      {word.type === "italic" ? <em className="text-gold not-italic">{word.text}</em> : word.text}
                     </motion.span>
                   </span>
                 );

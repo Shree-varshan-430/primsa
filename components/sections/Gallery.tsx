@@ -179,7 +179,7 @@ export default function Gallery() {
           <p className="eyebrow mb-4 text-center">OUR SPACES</p>
           <h2
             id="gallery-heading"
-            className="font-display text-display-lg text-primary text-center"
+            className="font-display text-display-lg text-ink text-center [&>em]:text-gold [&>em]:not-italic"
           >
             Spaces in <em>action</em>.
           </h2>
