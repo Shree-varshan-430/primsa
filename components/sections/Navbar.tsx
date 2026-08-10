@@ -88,7 +88,7 @@ export default function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`relative font-display text-sm font-medium transition-colors hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded px-1 py-1.5 group ${
+                  className={`relative font-display text-base font-medium transition-colors hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded px-1 py-1.5 group ${
                     active
                       ? "text-primary font-semibold"
                       : "text-stone"
@@ -109,7 +109,7 @@ export default function Navbar() {
           <div className="hidden lg:flex items-center gap-5">
             <a
               href="tel:9157373317"
-              className="flex items-center gap-2 font-display text-sm font-medium transition-colors hover:text-primary text-stone"
+              className="flex items-center gap-2 font-display text-base font-medium transition-colors hover:text-primary text-stone"
               aria-label="Call Primsa Storiesya"
             >
               <Phone size={14} aria-hidden="true" />
@@ -123,7 +123,7 @@ export default function Navbar() {
             >
               <Link
                 href="/contact"
-                className="bg-gold text-warm-white font-display text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-gold/90 hover:shadow-lg transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 inline-block"
+                className="bg-gold text-warm-white font-display text-base font-semibold px-6 py-3 rounded-full hover:bg-gold/90 hover:shadow-lg transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 inline-block"
               >
                 Book Your Event
               </Link>
