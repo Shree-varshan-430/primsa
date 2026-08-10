@@ -16,7 +16,7 @@ export default function Logo({ scrolled = false, className = "", isLight = false
     return (
       <div className={`inline-flex items-center justify-center transition-all duration-300 group-hover:scale-[1.02] ${className}`}>
         <Image
-          src="/images/Primsa_logo.jpeg"
+          src="/images/Primsa_logo.png"
           alt="Primsa Storiesya Logo"
           width={160}
           height={40}
