@@ -1,26 +1,284 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* ── Brand colour tokens ─────────────────────────────────────────── */
+@theme inline {
+  /* shadcn semantic tokens */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans, system-ui, sans-serif);
+  --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-display, Georgia, serif);
+
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+
+  /* ── Primsa brand palette ── */
+  --color-ink: #0D0D0D; /* Black - primary text */
+  --color-charcoal-navy: #7A0E17; /* Primary Maroon - default maroon/accent sections */
+  --color-ivory: #F0E8D5; /* Cream - warm neutral background */
+  --color-warm-white: #ffffff; /* Pure White */
+  --color-gold: #D4AF37; /* Gold accent */
+  --color-gold-soft: #E5C866; /* Light Gold highlight */
+  --color-terracotta: #941C27; /* Light Maroon highlight */
+  --color-stone: #454545; /* Dark Gray - regular body text */
+  --color-line: #E5DED0; /* Border color */
+  --color-accent: #0F3D2E; /* Dark Green - secondary brand color */
+
+  /* Extra Brand Colors */
+  --color-maroon-dark: #5C080F;
+  --color-green-dark: #082C20;
+  --color-green-light: #1B5442;
+  --color-cream-light: #F8F4EA;
+  --color-cream-dark: #E5DAC0;
+  --color-gold-dark: #B8941F;
+  --color-muted-gray: #777777;
+
+  /* ── Font families ── */
+  --font-sans: var(--font-sans);
+  --font-display: var(--font-display);
+  --font-accent: var(--font-accent);
+
+  /* ── Marquee animation ── */
+  --animate-marquee: marquee 35s linear infinite;
+  --animate-marquee-slow: marquee 55s linear infinite;
+  --animate-fade-up: fade-up 0.7s ease forwards;
+  --animate-fade-in: fade-in 0.5s ease forwards;
+}
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #0D0D0D;
+  --card: #ffffff;
+  --card-foreground: #0D0D0D;
+  --popover: #ffffff;
+  --popover-foreground: #0D0D0D;
+  --primary: #7A0E17;
+  --primary-foreground: #ffffff;
+  --secondary: #F0E8D5;
+  --secondary-foreground: #0D0D0D;
+  --muted: #F0E8D5;
+  --muted-foreground: #454545;
+  --accent: #0F3D2E;
+  --accent-foreground: #ffffff;
+  --destructive: #941C27;
+  --border: #E5DED0;
+  --input: #E5DED0;
+  --ring: #7A0E17;
+  --chart-1: oklch(0.87 0 0);
+  --chart-2: oklch(0.556 0 0);
+  --chart-3: oklch(0.439 0 0);
+  --chart-4: oklch(0.371 0 0);
+  --chart-5: oklch(0.269 0 0);
+  --radius: 0.5rem;
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* ── Keyframes ──────────────────────────────────────────────────── */
+@keyframes marquee {
+  0%   { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes count-up {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Base layer ─────────────────────────────────────────────────── */
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
   }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-ivory text-ink;
+    font-family: var(--font-sans), system-ui, sans-serif;
+    line-height: 1.6;
+  }
+
+  /* Spacing and margins from Udema reference analysis */
+  p {
+    margin-bottom: 30px;
+    line-height: 1.6;
+    text-align: justify;
+  }
+
+  ul, ol {
+    margin-bottom: 25px;
+  }
+
+  hr {
+    margin: 30px 0;
+  }
+
+  /* Specific hero & main title paragraphs line spacing reference (1.4 line-height) */
+  #hero p, 
+  .main_title p, 
+  .main_title_2 p {
+    line-height: 1.4 !important;
+  }
+
+  /* Custom scrollbar — subtle, brand-aligned */
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: #ffffff; }
+  ::-webkit-scrollbar-thumb { background: #D4AF37; border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: #B8941F; }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* ── Utility classes ────────────────────────────────────────────── */
+@layer utilities {
+  /* Font families — reference next/font injected CSS vars directly */
+  .font-display   { font-family: var(--font-display), sans-serif; }
+  .font-sans      { font-family: var(--font-sans), system-ui, sans-serif; }
+  .font-accent    { font-family: var(--font-accent), sans-serif; }
+
+  /* Section divider ornament */
+  .section-divider {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #D4AF37;
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+  }
+  .section-divider::before,
+  .section-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #E5DED0;
+  }
+
+  .eyebrow {
+    font-family: var(--font-display), sans-serif;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #D4AF37;
+  }
+
+  /* Marquee container */
+  .marquee-track {
+    display: flex;
+    width: max-content;
+    animation: marquee 35s linear infinite;
+  }
+  .marquee-track-slow {
+    display: flex;
+    width: max-content;
+    animation: marquee 55s linear infinite;
+  }
+  .marquee-track:hover,
+  .marquee-track-slow:hover {
+    animation-play-state: paused;
+  }
+
+  /* Gold shimmer underline */
+  .gold-underline {
+    position: relative;
+    display: inline-block;
+  }
+  .gold-underline::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #B7902F;
+    border-radius: 1px;
+  }
+
+  /* Focus visible for accessibility */
+  .focus-visible-ring:focus-visible {
+    outline: 2px solid #B7902F;
+    outline-offset: 2px;
+  }
+
+  /* Text clamp helpers */
+  .text-display-xl {
+    font-size: clamp(2.5rem, 6.5vw, 6rem);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+  }
+  .text-display-lg {
+    font-size: clamp(2rem, 4.5vw, 4rem);
+    line-height: 1.08;
+    letter-spacing: -0.018em;
+  }
+  .text-display-md {
+    font-size: clamp(1.6rem, 3vw, 2.75rem);
+    line-height: 1.12;
+    letter-spacing: -0.015em;
+  }
+
+  /* Automatically render emphasis/italics inside display headings in Italic display font */
+  .font-display em, em.font-script {
+    font-family: var(--font-display), sans-serif;
+    font-style: italic;
+    text-transform: none;
+    color: #D4AF37; /* gold */
+    font-weight: 600;
+  }
 }
