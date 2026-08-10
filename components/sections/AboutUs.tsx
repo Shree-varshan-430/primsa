@@ -144,7 +144,7 @@ export default function AboutUs() {
               <h2
                 ref={headingRef}
                 id="about-heading"
-                className="font-display text-display-lg text-charcoal-navy"
+                className="font-display text-display-lg text-ink"
               >
                 A space designed{" "}
                 <em>first</em>. A studio built
@@ -177,7 +177,7 @@ export default function AboutUs() {
                   viewport={{ once: true }}
                   transition={{ delay: 0.2 + i * 0.1, duration: 0.6 }}
                 >
-                  <p className="font-display text-3xl md:text-4xl text-charcoal-navy font-bold">
+                  <p className="font-display text-3xl md:text-4xl text-ink font-bold">
                     {stat.value}
                   </p>
                   <p className="font-sans text-xs text-stone uppercase tracking-wide mt-1">

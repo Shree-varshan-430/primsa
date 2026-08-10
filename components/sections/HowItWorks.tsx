@@ -53,7 +53,7 @@ export default function HowItWorks() {
           <p className="eyebrow mb-4 text-center">HOW WE WORK</p>
           <h2
             id="how-it-works-heading"
-            className="font-display text-display-lg text-charcoal-navy"
+            className="font-display text-display-lg text-ink"
           >
             Four steps to your{" "}
             <em>next</em> event.
@@ -119,7 +119,7 @@ export default function HowItWorks() {
             onClick={() =>
               document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" })
             }
-            className="bg-primary text-white font-display font-semibold px-8 py-4 rounded-full text-sm md:text-base hover:bg-primary-dark hover:shadow-lg transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+            className="bg-gold text-warm-white font-display font-semibold px-8 py-4 rounded-full text-sm md:text-base hover:bg-gold/90 hover:shadow-gold hover:shadow-lg transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2"
             aria-label="Start your booking process"
           >
             Start the Conversation →

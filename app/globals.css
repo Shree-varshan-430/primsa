@@ -50,24 +50,24 @@
   --radius-4xl: calc(var(--radius) * 2.6);
 
   /* ── Primsa brand palette ── */
-  --color-ink: #0D0D0D; /* Black - primary text */
-  --color-charcoal-navy: #7A0E17; /* Primary Maroon - default maroon/accent sections */
-  --color-ivory: #F0E8D5; /* Cream - warm neutral background */
-  --color-warm-white: #ffffff; /* Pure White */
-  --color-gold: #D4AF37; /* Gold accent */
-  --color-gold-soft: #E5C866; /* Light Gold highlight */
-  --color-terracotta: #941C27; /* Light Maroon highlight */
-  --color-stone: #454545; /* Dark Gray - regular body text */
-  --color-line: #E5DED0; /* Border color */
-  --color-accent: #0F3D2E; /* Dark Green - secondary brand color */
+  --color-ink: #231816; /* Deep Espresso Wenge - Primary text */
+  --color-charcoal-navy: #4A1B22; /* Softened luxury maroon - Sections / Footer / Header overlays */
+  --color-ivory: #FAF6EF; /* Warm cream - Page background section accent */
+  --color-warm-white: #ffffff; /* Pure White - Page background */
+  --color-gold: #D4AF37; /* Metallic Gold accent */
+  --color-gold-soft: #E5C573; /* Warm soft gold highlight */
+  --color-terracotta: #A82E2E; /* Red family for alert highlights */
+  --color-stone: #4D3D3A; /* Warm Cocoa Taupe - Regular body text */
+  --color-line: #E5DFD4; /* Soft cream-line border divider */
+  --color-accent: #0A5C36; /* 10% Emerald Green accent color */
 
   /* Extra Brand Colors */
-  --color-maroon-dark: #5C080F;
-  --color-green-dark: #082C20;
-  --color-green-light: #1B5442;
-  --color-cream-light: #F8F4EA;
-  --color-cream-dark: #E5DAC0;
-  --color-gold-dark: #B8941F;
+  --color-maroon-dark: #3D0C15;
+  --color-green-dark: #052617;
+  --color-green-light: #0D4E31;
+  --color-cream-light: #FAF6EF;
+  --color-cream-dark: #E6DFD2;
+  --color-gold-dark: #B7902F;
   --color-muted-gray: #777777;
 
   /* ── Font families ── */
@@ -84,23 +84,23 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #0D0D0D;
+  --foreground: #231816;
   --card: #ffffff;
-  --card-foreground: #0D0D0D;
+  --card-foreground: #231816;
   --popover: #ffffff;
-  --popover-foreground: #0D0D0D;
-  --primary: #7A0E17;
+  --popover-foreground: #231816;
+  --primary: #D4AF37;
   --primary-foreground: #ffffff;
-  --secondary: #F0E8D5;
-  --secondary-foreground: #0D0D0D;
-  --muted: #F0E8D5;
-  --muted-foreground: #454545;
-  --accent: #0F3D2E;
+  --secondary: #FAF6EF;
+  --secondary-foreground: #231816;
+  --muted: #FAF6EF;
+  --muted-foreground: #4D3D3A;
+  --accent: #0A5C36;
   --accent-foreground: #ffffff;
-  --destructive: #941C27;
-  --border: #E5DED0;
-  --input: #E5DED0;
-  --ring: #7A0E17;
+  --destructive: #A82E2E;
+  --border: #E5DFD4;
+  --input: #E5DFD4;
+  --ring: #D4AF37;
   --chart-1: oklch(0.87 0 0);
   --chart-2: oklch(0.556 0 0);
   --chart-3: oklch(0.439 0 0);
@@ -181,8 +181,8 @@
   /* Custom scrollbar — subtle, brand-aligned */
   ::-webkit-scrollbar { width: 6px; height: 6px; }
   ::-webkit-scrollbar-track { background: #ffffff; }
-  ::-webkit-scrollbar-thumb { background: #D4AF37; border-radius: 3px; }
-  ::-webkit-scrollbar-thumb:hover { background: #B8941F; }
+  ::-webkit-scrollbar-thumb { background: #C5A059; border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: #E5C158; }
 }
 
 /* ── Utility classes ────────────────────────────────────────────── */
@@ -197,7 +197,7 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    color: #D4AF37;
+    color: #B7902F;
     font-size: 0.75rem;
     letter-spacing: 0.2em;
   }
@@ -206,7 +206,7 @@
     content: '';
     flex: 1;
     height: 1px;
-    background: #E5DED0;
+    background: #E6DFD2;
   }
 
   .eyebrow {
@@ -215,7 +215,7 @@
     font-weight: 600;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    color: #D4AF37;
+    color: #B7902F;
   }
 
   /* Marquee container */
@@ -278,7 +278,7 @@
     font-family: var(--font-display), sans-serif;
     font-style: italic;
     text-transform: none;
-    color: #D4AF37; /* gold */
-    font-weight: 600;
+    color: #B7902F; /* gold */
+    font-weight: 500;
   }
 }

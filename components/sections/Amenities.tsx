@@ -165,7 +165,7 @@ export default function Amenities() {
     <>
       <section
         id="amenities"
-        className="bg-accent py-20 md:py-28 overflow-hidden animate-gpu"
+        className="bg-ivory py-20 md:py-28 overflow-hidden animate-gpu"
         aria-labelledby="amenities-heading"
       >
         <div className="max-w-7xl mx-auto px-5 md:px-8 lg:px-12">
@@ -177,11 +177,11 @@ export default function Amenities() {
             <GoldOrnament />
             <h2
               id="amenities-heading"
-              className="font-display text-display-lg text-ivory mb-4"
+              className="font-display text-display-lg text-ink mb-4"
             >
               Premium <em>Amenities</em>
             </h2>
-            <p className="font-sans text-white text-base md:text-[1.0625rem] leading-relaxed text-center">
+            <p className="font-sans text-stone text-base md:text-[1.0625rem] leading-relaxed text-center">
              Modern facilities, advanced technology, and thoughtful services designed to create exceptional event experiences.
             </p>
           </div>
