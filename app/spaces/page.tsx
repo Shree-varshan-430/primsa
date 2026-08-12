@@ -22,7 +22,7 @@ const spaceSpecs = [
     size: "350 sq. ft.",
     description: "A fully sound-insulated studio treated for pure acoustic voice capture. Ideal for podcasters, voiceover artists, audio books, and professional interview recordings.",
     details: ["Flawless multi-mic studio setup", "Professional acoustic wall panels", "State-of-the-art interface & monitors", "Direct laptop plug-and-play integrations"],
-    src: "/images/podcast-studio.jpg",
+    src: "/images/hall-green-screen.jpg",
   },
   {
     name: "Art Studio",
@@ -30,7 +30,7 @@ const spaceSpecs = [
     size: "800 sq. ft.",
     description: "Filled with warm, natural daylight, this inspiring art space is optimized for painting workshops, crafting classes, model drawing, and exhibition displays.",
     details: ["Sturdy easel mounts & drawing boards", "Natural north-facing light exposures", "Wash basins & supply utility racks", "Spacious open-floor creative layout"],
-    src: "/images/art-studio.jpg",
+    src: "/images/hall-photo-backdrop.jpg",
   },
 ];
 

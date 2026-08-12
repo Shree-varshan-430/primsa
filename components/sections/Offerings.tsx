@@ -32,24 +32,24 @@ const spaces = [
     title: "Podcast Studio",
     description:
       "Record high-quality podcasts, interviews, and video content in a purpose-built studio designed for creators, businesses, and professionals.",
-    image: "/images/podcast-studio.jpg",
-    alt: "Professional podcast studio with acoustic panels and microphone setup",
+    image: "/images/hall-green-screen.jpg",
+    alt: "Professional video podcast studio setup with green screen background and modern chairs",
   },
   {
     id: "art-studio",
     title: "Art Studio",
     description:
       "A vibrant studio where creativity flourishes, perfect for art classes, exhibitions, painting sessions, and cultural workshops.",
-    image: "/images/art-studio.jpg",
-    alt: "Bright art studio with natural light, easels, and creative supplies",
+    image: "/images/hall-photo-backdrop.jpg",
+    alt: "Creative art and photography studio with professional lighting and white photo backdrop",
   },
   {
     id: "seminars",
     title: "Seminars & Workshops",
     description:
       "A modern, flexible venue designed for seminars, workshops, training sessions, and professional development programs, equipped with essential presentation and collaboration facilities.",
-    image: "/images/seminar-room.jpg",
-    alt: "Professional seminar room with rows of chairs and presentation screen",
+    image: "/images/hall-seminar-seating.jpg",
+    alt: "Actual seminar room layout at Primsa Storiesya with rows of seating and traditional brass lamp",
   },
   {
     id: "training",

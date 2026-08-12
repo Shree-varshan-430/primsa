@@ -50,13 +50,38 @@ const galleryImages = [
   },
   {
     src: "/images/training-program.jpg",
-    alt: "Training Program  —  Team collaboration workshop setting",
+    alt: "Training Program  —   Team collaboration workshop setting",
     category: "Events",
   },
   {
     src: "/images/about-space.jpg",
-    alt: "Welcoming Entrance Foyer  —  Premium design details",
+    alt: "Welcoming Entrance Foyer  —   Premium design details",
     category: "Halls",
+  },
+  {
+    src: "/images/hall-green-screen.jpg",
+    alt: "Video Podcast Studio — Green screen production corner with comfortable seating",
+    category: "Studios",
+  },
+  {
+    src: "/images/hall-seminar-seating.jpg",
+    alt: "Modular Seminar Hall — Rows of seated arrangements for workshops and talks",
+    category: "Halls",
+  },
+  {
+    src: "/images/hall-photo-backdrop.jpg",
+    alt: "Creative Photography Studio — Professional white backdrop and studio lighting setup",
+    category: "Studios",
+  },
+  {
+    src: "/images/hall-paintings.jpg",
+    alt: "Premium Venue Interiors — Elegant framed abstract paintings and warm ambient walls",
+    category: "Halls",
+  },
+  {
+    src: "/images/hall-studio-lighting.jpg",
+    alt: "Professional Studio Production Gear — High-spec lighting equipment for video and photography",
+    category: "Studios",
   },
 ];
 
