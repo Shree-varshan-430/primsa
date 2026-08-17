@@ -130,10 +130,10 @@ export default function AboutPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1, duration: 0.6 }}
-                className="space-y-4 border-l border-gold/30 pl-6"
+                className="space-y-4 border-l border-gold/30 hover:border-gold pl-6 transition-colors duration-300 group"
               >
-                <div className="flex items-center gap-2 text-gold font-display text-lg font-bold">
-                  <Diamond size={8} className="fill-gold text-gold" />
+                <div className="flex items-center gap-2 text-gold font-display text-lg font-bold group-hover:translate-x-1 transition-transform duration-300">
+                  <Diamond size={8} className="fill-gold text-gold transition-transform duration-500 group-hover:rotate-45" />
                   {val.title}
                 </div>
                 <p className="font-sans text-stone text-sm md:text-base leading-relaxed">

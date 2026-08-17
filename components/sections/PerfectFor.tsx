@@ -47,11 +47,9 @@ export default function PerfectFor() {
           <p className="eyebrow mb-4 text-center">WHO WE SERVE</p>
           <h2
             id="perfect-for-heading"
-            className="font-display text-display-lg text-ink mb-5 text-center"
+            className="font-display text-display-lg text-ink mb-5 text-center [&>em]:text-gold [&>em]:not-italic"
           >
-            Built for{" "}
-            <em>creators</em>,<br className="block" /> Made for{" "}
-            <em>community</em>.
+            Built for <em>creators</em>,<br className="block" /> Made for <em>community</em>.
           </h2>
           <p className="font-sans text-center text-stone text-base md:text-lg leading-relaxed">
             Our spaces are designed to flex around your vision  — whether you&apos;re

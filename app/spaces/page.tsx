@@ -138,10 +138,10 @@ export default function SpacesPage() {
                   <div className="pt-4">
                     <Link
                       href="/contact"
-                      className="inline-flex items-center gap-2 bg-charcoal-navy text-warm-white font-display text-sm font-semibold px-6 py-3 rounded-full hover:bg-gold hover:text-warm-white transition-all duration-300"
+                      className="inline-flex items-center gap-2 bg-charcoal-navy text-warm-white font-display text-sm font-semibold px-6 py-3 rounded-full hover:bg-gold hover:text-warm-white transition-all duration-300 group"
                     >
                       Enquire For {space.name}
-                      <ArrowRight size={14} />
+                      <ArrowRight size={14} className="transition-transform duration-300 group-hover:translate-x-1" />
                     </Link>
                   </div>
                 </div>

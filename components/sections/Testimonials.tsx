@@ -109,7 +109,7 @@ export default function Testimonials() {
           TRUSTED BY
         </motion.p>
         <motion.h2
-          className="font-display text-display-md text-ivory"
+          className="font-display text-display-md text-ivory [&>em]:text-gold [&>em]:not-italic"
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}

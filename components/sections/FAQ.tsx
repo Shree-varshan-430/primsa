@@ -96,9 +96,9 @@ export default function FAQ() {
           <p className="font-display italic text-gold text-lg md:text-xl mb-4 text-center">Common Questions</p>
           <h2
             id="faq-heading"
-            className="font-display text-display-lg text-ink text-center"
+            className="font-display text-display-lg text-ink text-center [&>em]:text-gold [&>em]:not-italic"
           >
-            Venue FAQs
+            Venue <em>FAQs</em>
           </h2>
         </motion.div>
 

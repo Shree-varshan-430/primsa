@@ -150,25 +150,37 @@ export default function Navbar() {
             id="mobile-menu"
             role="dialog"
             aria-label="Navigation menu"
-            className="fixed inset-0 z-40 bg-charcoal-navy flex flex-col"
+            className="fixed inset-0 z-40 bg-white/98 backdrop-blur-md flex flex-col"
             initial={{ opacity: 0, x: "100%" }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: "100%" }}
             transition={{ duration: 0.35, ease: [0.32, 0.72, 0, 1] }}
           >
-            <div className="flex-1 flex flex-col justify-center px-10 gap-8">
+            {/* Mobile menu header (keeps logo/close button aligned) */}
+            <div className="h-16 md:h-20 px-5 md:px-8 flex items-center justify-between border-b border-line/20">
+              <Logo noBg={true} />
+              <button
+                onClick={() => setMenuOpen(false)}
+                className="p-2 rounded-full text-ink hover:bg-line transition-colors"
+                aria-label="Close menu"
+              >
+                <X size={22} />
+              </button>
+            </div>
+
+            <div className="flex-grow flex flex-col justify-center px-8 md:px-12 gap-6 my-8">
               {navLinks.map((link, i) => (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`font-display text-4xl md:text-5xl text-left hover:text-gold-soft transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold rounded ${
-                    isActive(link.href) ? "text-gold font-semibold" : "text-ivory"
+                  className={`font-display text-3xl md:text-4xl text-left hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold rounded ${
+                    isActive(link.href) ? "text-gold font-semibold" : "text-stone"
                   }`}
                 >
                   <motion.span
-                    initial={{ opacity: 0, y: 24 }}
+                    initial={{ opacity: 0, y: 16 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.1 + i * 0.07, duration: 0.4, ease: "easeOut" }}
+                    transition={{ delay: 0.05 + i * 0.05, duration: 0.4, ease: "easeOut" }}
                     onClick={() => setMenuOpen(false)}
                     className="block"
                   >
@@ -177,18 +189,19 @@ export default function Navbar() {
                 </Link>
               ))}
             </div>
-            <div className="px-10 pb-12 flex flex-col gap-4">
+
+            <div className="px-8 md:px-12 pb-12 flex flex-col gap-4 border-t border-line/25 pt-6">
               <a
                 href="tel:9157373317"
-                className="flex items-center gap-2 text-ivory font-display text-sm"
+                className="flex items-center gap-2 text-stone font-display text-base hover:text-primary transition-colors"
               >
                 <Phone size={14} />
-                9157373317
+                <span>9157373317</span>
               </a>
               <Link
                 href="/contact"
                 onClick={() => setMenuOpen(false)}
-                className="bg-gold text-warm-white font-display text-sm font-semibold px-6 py-3 rounded-full self-start hover:bg-gold/90 transition-colors"
+                className="bg-gold text-warm-white font-display text-base font-semibold px-6 py-3.5 rounded-full self-start hover:bg-gold/90 transition-all duration-200"
               >
                 Book Your Event
               </Link>

@@ -37,7 +37,7 @@ export default function StatementSection() {
 
         <motion.h2
           id="statement-heading"
-          className="font-display text-display-xl text-ivory mb-10 text-center"
+          className="font-display text-display-xl text-ivory mb-10 text-center [&>em]:text-gold [&>em]:not-italic"
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
